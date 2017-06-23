@@ -11,5 +11,6 @@
 	"spacegray_tabs_xlarge": true,
 	"tab_size": 4,
 	"theme": "Spacegray Eighties.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"highlight_line": true
 }

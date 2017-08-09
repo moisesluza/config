@@ -1,5 +1,5 @@
-source ~/.git-prompt.sh
-source ~/.colors.sh
+source ~/config/bash_mac/git-prompt.sh
+source ~/config/bash_mac/colors.sh
 
 # Colored ls (OS X only)
 export CLICOLOR=1;

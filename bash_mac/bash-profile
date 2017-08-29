@@ -2,6 +2,7 @@ source ~/config/bash_mac/git-prompt.sh
 source ~/config/bash_mac/colors.sh
 
 # Colored ls (OS X only)
+export GREP_OPTIONS='--color=auto'
 export CLICOLOR=1;
 export LSCOLORS=exfxcxdxbxegedabagacad;
 

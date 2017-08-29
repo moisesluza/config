@@ -5,11 +5,11 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+source $HOME/config/colors.sh
+source $HOME/config/git-prompt.sh
+
 export GREP_OPTIONS='--color=auto'
 export LS_OPTIONS='--color=auto'
-
-source ~/.colors.sh
-source ~/.git-prompt.sh
 
 # User specific aliases and functions
 

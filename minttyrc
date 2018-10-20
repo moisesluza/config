@@ -1,3 +1,7 @@
+#Monokai theme from https://github.com/oumu/mintty-color-schemes
+#based on chriskempson.com/projects/base16/ 
+#(https://github.com/chriskempson/base16)
+#and https://github.com/iamthad/base16-mintty
 ForegroundColour=248,248,242
 BackgroundColour=39,40,34
 CursorColour=253,157,79
@@ -17,6 +21,8 @@ Cyan=161,239,228
 BoldCyan=95,227,210
 White=248,248,242
 BoldWhite=249,248,245
+
+#Additional configuration added
 BoldAsFont=-1
 CursorType=block
 Term=xterm-256color

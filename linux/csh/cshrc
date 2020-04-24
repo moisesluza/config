@@ -28,14 +28,18 @@ alias precmd 'set prompt="%{$GREEN%}%t%{$RED%}-%{$IBLUE%}%m %{$IYELLOW%}%c3 %{$R
 
 
 #attach to base tmux session only if not in a tmux session already
-if (! $?TMUX) then
-   echo "tmux undef"
-   tmux new-session -A -s base
+if ( `which tmux` == "" ) then
+    echo "tmux not found"
 else
-  if ("$TMUX" == "")  then
-      echo "tmux is empty"
-      tmux new-session -A -s base
-  else
-      echo "tmux contains $TMUX"
-  endif
+    if (! $?TMUX) then
+       echo "TMUX env var undef"
+       tmux new-session -A -s base
+    else
+      if ("$TMUX" == "")  then
+          echo "tmux is empty"
+          tmux new-session -A -s base
+      else
+          echo "tmux contains $TMUX"
+      endif
+    endif
 endif

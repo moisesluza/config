@@ -1,0 +1,3 @@
+[alias]
+    log = log --graph --decorate --abbrev-commit --name-only
+    st = status -s

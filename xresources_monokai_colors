@@ -1,3 +1,4 @@
+! Converted to Xresources from:
 ! Monokai theme from https://github.com/oumu/mintty-color-schemes
 ! based on chriskempson.com/projects/base16/
 ! (https://github.com/chriskempson/base16)
@@ -20,36 +21,37 @@
 
 !dark colors
 !black
-*color0: #272822
+xterm*color0: #272822
 !red3
-*color1: #f92672
+xterm*color1: #f92672
 !green3
-*color2: #a6e22e
+xterm*color2: #a6e22e
 !yellow3
-*color3: #f4bf75
+xterm*color3: #f4bf75
 !blue
-*color4: #66d9ef
+xterm*color4: #66d9ef
 !magenta3
-*color5: #ae81ff
+xterm*color5: #ae81ff
 !cyan3
-*color6: #a1efe4
+xterm*color6: #a1efe4
 !gray90
-*color7: #f8f8f2
+xterm*color7: #f8f8f2
 
 !light/bold colors
 !gray30/black
-*color8: #75715e
+xterm*color8: #75715e
 !red
-*color9: #cc064e
+xterm*color9: #cc064e
 !green
-*color10: #7aac18
+xterm*color10: #7aac18
 !yellow
-*color11: #f0a945
+xterm*color11: #f0a945
 !blue
-*color12: #21c7e9
+xterm*color12: #21c7e9
 !magenta
-*color13: #7e33ff
+xterm*color13: #7e33ff
 !cyan
-*color14: #5fe3d2
+xterm*color14: #5fe3d2
 !white
-*color15: #f9f8f5
+xterm*color15: #f9f8f5
+

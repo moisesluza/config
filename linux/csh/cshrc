@@ -19,7 +19,6 @@ alias la 'ls -a'
 alias ld 'ls -d'
 
 #configuring prompt
-###################
 set env_conf_path = "$HOME/config/linux"
 source $env_conf_path/csh/colors.tcsh
 set branch='bash -c '\''source '$env_conf_path/bash'/git-prompt.bash; echo $(__git_ps1)'\'' '
@@ -27,10 +26,12 @@ set branch='bash -c '\''source '$env_conf_path/bash'/git-prompt.bash; echo $(__g
 alias precmd 'set prompt="%{$GREEN%}%t%{$RED%}-%{$IBLUE%}%m %{$IYELLOW%}%c3 %{$RED%}`$branch`%{$WHITE%}$ "'
 
 
-if (! `which tmux` == "" ) then
-    #attach to base tmux session only if not in a tmux session already
+#attach to base tmux session only if not in a tmux session already
+if ( `which tmux` == "" ) then
+    echo "tmux not found"
+else
     if (! $?TMUX) then
-       echo "tmux undef"
+       echo "TMUX env var undef"
        tmux new-session -A -s base
     else
       if ("$TMUX" == "")  then

@@ -27,15 +27,17 @@ set branch='bash -c '\''source '$env_conf_path/bash'/git-prompt.bash; echo $(__g
 alias precmd 'set prompt="%{$GREEN%}%t%{$RED%}-%{$IBLUE%}%m %{$IYELLOW%}%c3 %{$RED%}`$branch`%{$WHITE%}$ "'
 
 
-#attach to base tmux session only if not in a tmux session already
-if (! $?TMUX) then
-   echo "tmux undef"
-   tmux new-session -A -s base
-else
-  if ("$TMUX" == "")  then
-      echo "tmux is empty"
-      tmux new-session -A -s base
-  else
-      echo "tmux contains $TMUX"
-  endif
+if (! `which tmux` == "" ) then
+    #attach to base tmux session only if not in a tmux session already
+    if (! $?TMUX) then
+       echo "tmux undef"
+       tmux new-session -A -s base
+    else
+      if ("$TMUX" == "")  then
+          echo "tmux is empty"
+          tmux new-session -A -s base
+      else
+          echo "tmux contains $TMUX"
+      endif
+    endif
 endif

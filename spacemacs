@@ -45,7 +45,7 @@ values."
      emacs-lisp
      ;; git
      ;; markdown
-     ;; org
+     org
      (shell :variables
             shell-default-shell 'term
             shell-default-term-shell "/bin/bash"

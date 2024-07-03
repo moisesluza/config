@@ -37,7 +37,7 @@ source $env_conf_path/bash/git-prompt.sh
 #PS1="$GREEN\T $IBLUE\h $IYELLOW\w $RED\$(__git_ps1 '(%s)')$CYAN\$(get_virtualenv)$Color_Off#"
 
 #wrap colors with \[ \] to not get the prompt broken with long paths or history commands
-PS1="\[$GREEN\]\t \[$BLUE\]\h \[$IYELLOW\]\W\[$RED\]\$(__git_ps1 ' (%s)') \[$Color_Off\]\$ "
+PS1="\[$GREEN\]\t \[$BLUE\]\h \[$HI_PURPLE\]\W\[$RED\]\$(__git_ps1 ' (%s)') \[$Color_Off\]\$ "
 
 
 #automatically connect to tmux base session or starta  new base session

@@ -1,0 +1,7 @@
+# overrides xterm copy and paste keybindings
+# usefull in macs since there isn't 'insert' key.
+XTerm*selectToClipboard: true
+XTerm*VT100*translations: #override \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C: select-end(CLIPBOARD)
+

@@ -16,11 +16,6 @@ alias la="ls -a"
 alias ld="ls -d"
 
 alias prettyjson="python -m json.tool"
-alias es="emacs --daemon"
-alias ec="emacsclient -a '' -nw"
-alias ew="emacsclient -a '' -c"
-alias e="emacsclient -a ''"
-
 
 # export VIRTUAL_ENV_DISABLE_PROMPT=1
 function get_virtualenv () {

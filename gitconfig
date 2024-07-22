@@ -2,4 +2,4 @@
     log = log --graph --decorate --abbrev-commit --name-only
     st = status -s
 [core]
-	autocrlf = true
+	autocrlf = false

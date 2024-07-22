@@ -1,0 +1,12 @@
+# Contains commands used to enable/disable macos user preferences using 'defaults' command.
+# (see https://macos-defaults.com/)
+# This file is not included in any rc file yet since it is not clear where does it belong
+# since this configuration is done only one time. If added to bashrc then the value needs 
+# to be checked before changing it.
+
+# To disable the Apple press and hold for VSCode only, run this command in a terminal
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+# To re-enable, run this command in a terminal:
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
+
